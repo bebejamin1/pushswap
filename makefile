@@ -1,8 +1,10 @@
 NAME = push_swap
 
 C_FILES = stack_operations/swap_operations.c stack_operations/push_operations.c \
-	stack_operations/reverse_rotate_operations.c stack_operations/rotate_operations.c push_swap.c \
-	set_up/tab_creation.c set_up/cheakers.c radix/radix.c radix/small_sort.c
+	stack_operations/reverse_rotate_operations.c stack_operations/rotate_operations.c\
+	push_swap.c \
+	set_up/tab_creation.c set_up/cheakers.c \
+	radix/radix.c radix/small_sort.c
 
 OBJECT_FILES = swap_operations.o push_operations.o \
 	reverse_rotate_operations.o rotate_operations.o push_swap.o \
@@ -11,8 +13,8 @@ OBJECT_FILES = swap_operations.o push_operations.o \
 all : $(NAME)
 
 $(NAME) : $(OBJECT_FILES)
-	make bonus -C 42_libft
-	cc -Wall -Wextra -Werror -o $(NAME) $(OBJECT_FILES) 42_libft/libft.a
+# 	make bonus -C libft
+	cc -Wall -Wextra -Werror -o $(NAME) $(OBJECT_FILES) libft/libft.a
 
 $(OBJECT_FILES) : $(C_FILES)
 	cc -c -Wall -Wextra -Werror -g3 $(C_FILES) 
