@@ -6,7 +6,7 @@
 /*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 15:49:55 by bbeaurai          #+#    #+#             */
-/*   Updated: 2025/12/15 14:34:33 by bbeaurai         ###   ########.fr       */
+/*   Updated: 2025/12/16 15:09:58 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,9 @@
 # include <bsd/string.h>
 # include <fcntl.h>
 
-
-/*GNL*/
+/******************************************************************************/
+/*------------------------------------GNL-------------------------------------*/
+/******************************************************************************/
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
@@ -38,7 +39,9 @@ int		check_if_n_inline(char *check);
 char	*free_stock(char *line, char *buffer);
 char	*get_next_line(int fd);
 
-/*libft*/
+/******************************************************************************/
+/*----------------------------------libft-------------------------------------*/
+/******************************************************************************/
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -74,20 +77,24 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-/*libft optionnel*/
+/******************************************************************************/
+/*-------------------------------libft optionnel------------------------------*/
+/******************************************************************************/
 typedef struct s_list
 {
-	void			*content;
+	int				content;
+	long long		weight;
 	struct s_list	*next;
-}	t_list;
-t_list	*ft_lstnew(void *content);
-void	ft_lstadd_front(t_list **lst, t_list *new);
-int		ft_lstsize(t_list *lst);
-t_list	*ft_lstlast(t_list *lst);
+}					t_list;
+
 void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstdelone(t_list *lst, void (*del)(void*));
-void	ft_lstclear(t_list **lst, void (*del)(void*));
-void	ft_lstiter(t_list *lst, void (*f)(void *));
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstclear(t_list **lst, void (*del)(int));
+void	ft_lstdelone(t_list *lst, void (*del)(int));
+void	ft_lstiter(t_list *lst, void (*f)(int));
+t_list	*ft_lstlast(t_list *lst);
+t_list	*ft_lstmap(t_list *lst, int (*f)(int), void (*del)(int));
+t_list	*ft_lstnew(int content);
+int		ft_lstsize(t_list *lst);
 
 #endif

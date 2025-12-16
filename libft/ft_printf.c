@@ -6,20 +6,11 @@
 /*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 17:26:53 by bbeaurai          #+#    #+#             */
-/*   Updated: 2025/12/15 14:27:22 by bbeaurai         ###   ########.fr       */
+/*   Updated: 2025/12/16 15:09:34 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "ft_printf.h"
-# include "Libft/libft.h"
-# include <stdarg.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <bsd/string.h>
-# include <stdio.h>
-# include <limits.h>
-
+# include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

@@ -6,19 +6,19 @@
 /*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 17:19:11 by bbeaurai          #+#    #+#             */
-/*   Updated: 2025/11/08 09:28:01 by bbeaurai         ###   ########.fr       */
+/*   Updated: 2025/12/16 15:08:05 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// void	del_node(void *content)
+// static int	del_node(int content)
 // {
 // 	if (!content)
 // 		return ;
 // 	free(content);
 // }
-// void	*node_change(void *elem)
+// static void	*node_change(void *elem)
 // {
 // 	if (!elem)
 // 		return (NULL);
@@ -39,33 +39,28 @@
 // 	}
 // 	return (content);
 // }
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, int (*f)(int), void (*del)(int))
 {
-	t_list	*temp;
-	t_list	*newlst;
-	void	*tmp_content;
+	t_list	*start;
+	t_list	*ptr;
+	t_list	*new;
 
-	if (!f || !del || !lst)
+	if (lst == NULL)
 		return (NULL);
-	newlst = ft_lstnew(f(lst->content));
-	if (!newlst)
-		return (NULL);
-	lst = lst->next;
-	temp = newlst;
-	while (lst != NULL)
+	ptr = lst;
+	start = ft_lstnew((*f)(ptr->content));
+	if (start == NULL)
+		ft_lstclear(&start, del);
+	ptr = ptr->next;
+	while (ptr != NULL)
 	{
-		tmp_content = f(lst->content);
-		temp = temp->next;
-		temp = ft_lstnew(tmp_content);
-		if (!temp)
-		{
-			ft_lstclear(&temp, del);
-			return (NULL);
-		}
-		ft_lstadd_back(&newlst, temp);
-		lst = lst->next;
+		new = ft_lstnew((*f)(ptr->content));
+		if (new == NULL)
+			ft_lstclear(&start, del);
+		ft_lstadd_back(&start, new);
+		ptr = ptr->next;
 	}
-	return (newlst);
+	return (start);
 }
 // int main()
 // {

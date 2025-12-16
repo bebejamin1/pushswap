@@ -6,19 +6,19 @@
 /*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 13:23:21 by bbeaurai          #+#    #+#             */
-/*   Updated: 2025/11/08 09:18:54 by bbeaurai         ###   ########.fr       */
+/*   Updated: 2025/12/16 14:56:55 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// void	del_node(void *content)
+// static int	del_node(int content)
 // {
-// 	// if (!content)
-// 	// 	return ;
+// 	if (!content)
+// 		return ;
 // 	free(content);
 // }
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(int))
 {
 	t_list	*temp;
 

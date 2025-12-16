@@ -6,7 +6,7 @@
 /*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 16:27:26 by bbeaurai          #+#    #+#             */
-/*   Updated: 2025/11/04 17:18:47 by bbeaurai         ###   ########.fr       */
+/*   Updated: 2025/12/16 14:57:13 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
 // 		i++;
 // 	}
 // }
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(int))
 {
 	if (!lst)
 		return ;
