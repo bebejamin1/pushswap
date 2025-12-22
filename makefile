@@ -13,11 +13,10 @@ OBJECT_FILES = swap_operations.o push_operations.o \
 all : $(NAME)
 
 $(NAME) : $(OBJECT_FILES)
-# 	make bonus -C libft
 	cc -Wall -Wextra -Werror -o $(NAME) $(OBJECT_FILES) libft/libft.a
 
 $(OBJECT_FILES) : $(C_FILES)
-	cc -c -Wall -Wextra -Werror -g3 $(C_FILES) 
+	cc -c -Wall -Wextra -Werror -g3 $(C_FILES)
 
 
 clean :
