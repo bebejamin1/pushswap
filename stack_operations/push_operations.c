@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_operations.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbuchy <nbuchy@student.42lehavre.fr>       +#+  +:+       +#+        */
+/*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 10:34:34 by nbuchy            #+#    #+#             */
-/*   Updated: 2025/12/01 15:43:42 by nbuchy           ###   ########.fr       */
+/*   Created: 2025/12/22 10:41:37 by bbeaurai          #+#    #+#             */
+/*   Updated: 2025/12/22 10:41:40 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate_operations.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbuchy <nbuchy@student.42lehavre.fr>       +#+  +:+       +#+        */
+/*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 11:41:26 by nbuchy            #+#    #+#             */
-/*   Updated: 2025/12/01 15:45:40 by nbuchy           ###   ########.fr       */
+/*   Created: 2025/12/22 10:42:10 by bbeaurai          #+#    #+#             */
+/*   Updated: 2025/12/22 10:42:13 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
