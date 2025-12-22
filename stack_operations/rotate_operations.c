@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rotate_operations.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbuchy <nbuchy@student.42lehavre.fr>       +#+  +:+       +#+        */
+/*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/24 15:26:11 by nbuchy            #+#    #+#             */
-/*   Updated: 2025/12/01 15:46:41 by nbuchy           ###   ########.fr       */
+/*   Created: 2025/12/22 10:57:33 by bbeaurai          #+#    #+#             */
+/*   Updated: 2025/12/22 10:57:35 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

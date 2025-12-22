@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   tab_creation.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbuchy <nbuchy@student.42lehavre.fr>       +#+  +:+       +#+        */
+/*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/28 15:26:21 by nbuchy            #+#    #+#             */
-/*   Updated: 2025/12/04 10:21:18 by nbuchy           ###   ########.fr       */
+/*   Created: 2025/12/22 10:58:01 by bbeaurai          #+#    #+#             */
+/*   Updated: 2025/12/22 10:58:03 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

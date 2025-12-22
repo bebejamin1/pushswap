@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   cheakers.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbuchy <nbuchy@student.42lehavre.fr>       +#+  +:+       +#+        */
+/*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/02 09:46:03 by nbuchy            #+#    #+#             */
-/*   Updated: 2025/12/03 17:17:57 by nbuchy           ###   ########.fr       */
+/*   Created: 2025/12/22 10:58:08 by bbeaurai          #+#    #+#             */
+/*   Updated: 2025/12/22 10:58:09 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "../push_swap.h"
 
