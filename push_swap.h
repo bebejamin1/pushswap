@@ -6,7 +6,7 @@
 /*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 12:12:47 by bbeaurai          #+#    #+#             */
-/*   Updated: 2025/12/16 08:37:31 by bbeaurai         ###   ########.fr       */
+/*   Updated: 2025/12/22 11:34:04 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ void	sort_five(t_list **a, t_list **b);
 void	del_c(int content);
 
 #endif
-
-
-
-
-
-
-
-
-

@@ -6,10 +6,9 @@
 /*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 10:58:08 by bbeaurai          #+#    #+#             */
-/*   Updated: 2025/12/22 10:58:09 by bbeaurai         ###   ########.fr       */
+/*   Updated: 2025/12/22 11:44:00 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../push_swap.h"
 
@@ -20,8 +19,8 @@ int	argv_cheacker(char *str, long nbr)
 	i = 0;
 	while (str[i] != 0)
 	{
-		if (!(str[i] >= '0' && str[i] <= '9') && !(str[i] == '-' && (str[i
-						+ 1] >= '0' && str[i + 1] <= '9')))
+		if (!(str[i] >= '0' && str[i] <= '9') && !(str[i] == '-'
+				&& (str[i + 1] >= '0' && str[i + 1] <= '9')))
 			return (0);
 		i++;
 	}

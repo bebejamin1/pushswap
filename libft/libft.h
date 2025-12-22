@@ -6,7 +6,7 @@
 /*   By: bbeaurai <bbeaurai@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 15:49:55 by bbeaurai          #+#    #+#             */
-/*   Updated: 2025/12/16 15:09:58 by bbeaurai         ###   ########.fr       */
+/*   Updated: 2025/12/22 11:39:19 by bbeaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,26 @@
 # include <fcntl.h>
 
 /******************************************************************************/
+/*----------------------------------PRINTF------------------------------------*/
+/******************************************************************************/
+
+int		ft_u_putnbr_b(unsigned long long nbr, char *base);
+size_t	ft_strlen(const char *s);
+int		ft_putnbr_base(int nb, char *base);
+size_t	for_percent(char c);
+size_t	for_char(int c);
+size_t	for_str(char *str);
+size_t	for_address(va_list ap);
+size_t	check_format(char format, va_list ap);
+int		ft_printf(const char *format, ...);
+
+/******************************************************************************/
 /*------------------------------------GNL-------------------------------------*/
 /******************************************************************************/
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
+
 size_t	ft_str_length(char *s);
 char	*error_str_line(char *s1, char *s2);
 char	*ft_str_line(char *s1, char *s2);
